@@ -32,4 +32,4 @@ app.delete('/items/:id', async (req, res) => {
   res.json({ success: true });
 });
 
-app.listen(3000, () => console.log("API running on port 3000"));
+app.listen(process.env.PORT, () => console.log(`API running on port ${process.env.PORT}`));
